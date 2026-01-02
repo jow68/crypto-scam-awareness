@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Blog bilingue pour éviter les scams crypto : conseils, infographies et ressources." />
+  <title>Éviter les scams crypto | Avoid Crypto Scams</title>
+  <style>
+    :root{ --bg:#0f172a; --fg:#e2e8f0; --accent:#f97316; --card:#111827; --muted:#94a3b8; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(135deg,#0f172a,#111827);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif}
+    header{padding:48px 20px;text-align:center}
+    header h1{margin:0;font-size:2.2rem}
+    header p{color:var(--muted)}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .tabs{display:flex;gap:8px;justify-content:center;margin:10px 0 24px}
+    .tab{padding:8px 14px;border:1px solid var(--muted);border-radius:999px;color:var(--fg);cursor:pointer}
+    .tab.active{background:var(--accent);border-color:var(--accent);color:#1f2937}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+    .card{background:var(--card);border-radius:16px;padding:18px;box-shadow:0 10px 20px rgba(0,0,0,.35)}
+    h2{font-size:1.4rem;margin:0 0 10px}
+    ul{margin:0 0 10px 18px}
+    .share{display:flex;gap:8px;justify-content:center;margin:24px 0}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:#1f2937;color:#fff;text-decoration:none}
+    .btn:hover{background:#374151}
+    footer{padding:16px;text-align:center;color:var(--muted)}
+    .cta{margin:20px 0;text-align:center}
+    .cta a{background:var(--accent);color:#1f2937;padding:12px 18px;border-radius:12px;text-decoration:none}
+    .note{color:var(--muted);font-size:.9rem}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Éviter les scams crypto en cette nouvelle année</h1>
+  <p>Blog bilingue (FR/EN) – Conseils, infographies, ressources & partage</p>
+</header>
+<div class="container">
+  <div class="tabs">
+    <div class="tab active" onclick="switchLang('fr')">Français</div>
+    <div class="tab" onclick="switchLang('en')">English</div>
+  </div>
+
+  <section id="fr">
+    <div class="grid">
+      <div class="card"><h2>Introduction</h2><p>Le monde des crypto-actifs attire de plus en plus d’investisseurs, mais il est aussi devenu un terrain de jeu pour les escrocs. Après plusieurs mois de lutte et des échanges avec plus de dix entreprises prétendant récupérer des fonds, <b>récupérer son argent après un scam est quasi impossible</b>.</p></div>
+      <div class="card"><h2>Pourquoi la récupération est difficile</h2><ul><li>Transactions irréversibles</li><li>Anonymat et juridictions offshore</li><li>Absence de régulation globale</li><li>Complexité des analyses on-chain</li></ul></div>
+      
+      <div class="card"><h2>Infographie – Récupération presque impossible</h2>
+        <img src="assets/images/infographie1.png" alt="Infographie récupération quasi impossible" style="width:100%;border-radius:12px"/>
+      </div>
+      <div class="card"><h2>Infographie – 6 drapeaux rouges</h2>
+        <img src="assets/images/infographie2.png" alt="Infographie 6 drapeaux rouges" style="width:100%;border-radius:12px"/>
+      </div>
+      <div class="card"><h2>Les 6 drapeaux rouges</h2><ul><li>Rendements garantis ou irréalistes</li><li>Registres/licences invérifiables</li><li>Pression et urgence</li><li>Connexion à distance / accès bancaire</li><li>Seed phrase / signature d’approbation</li><li>Frais d’avance / dépôts pour “débloquer”</li></ul></div>
+      <div class="card"><h2>Est-ce légal de financer des outils de hacking ?</h2><p><b>Non.</b> Exiger d’une victime le financement d’outils de hacking est contraire aux lois et aux bonnes pratiques. Aucune entreprise régulée ne vous demandera cela.</p></div>
+    </div>
+  </section>
+
+  <section id="en" style="display:none">
+    <div class="grid">
+      <div class="card"><h2>Introduction</h2><p>The crypto world attracts more and more investors, but it has also become a playground for scammers. After months of interactions with over ten companies, <b>recovery is almost impossible</b>.</p></div>
+      <div class="card"><h2>Why recovery is difficult</h2><ul><li>Irreversible transactions</li><li>Anonymity & offshore jurisdictions</li><li>Lack of global regulation</li><li>Complex on-chain analytics</li></ul></div>
+      <div class="card"><h2>Six red flags</h2><ul><li>Guaranteed or unrealistic returns</li><li>Unverifiable registrations/licensing</li><li>Pressure & urgency</li><li>Remote-access / bank-verification requests</li><li>Seed phrase / approval signature</li><li>Advance fees / deposits to “unlock”</li></ul></div>
+      <div class="card"><h2>Is funding hacking tools legal?</h2><p><b>No.</b> Asking victims to fund hacking tools is improper and unlawful; regulated firms will not request this.</p></div>
+    </div>
+  </section>
+
+  <div class="cta"><a href="#" onclick="alert('Replace https://<your-username>.github.io/crypto-scam-awareness/ below before sharing.');">Lire le guide complet</a><div class="note">Astuce : remplacez <code>https://<your-username>.github.io/crypto-scam-awareness/</code> par l’URL finale de votre blog avant de partager.</div></div>
+
+  <div class="share">
+    <a class="btn" id="tw" href="https://twitter.com/intent/tweet?url=https://<your-username>.github.io/crypto-scam-awareness/&text=Éviter%20les%20scams%20crypto%20:%20guide%20bilingue" target="_blank">Twitter/X</a>
+    <a class="btn" id="li" href="https://www.linkedin.com/sharing/share-offsite/?url=https://<your-username>.github.io/crypto-scam-awareness/" target="_blank">LinkedIn</a>
+    <a class="btn" id="fb" href="https://www.facebook.com/sharer/sharer.php?u=https://<your-username>.github.io/crypto-scam-awareness/" target="_blank">Facebook</a>
+  </div>
+</div>
+<footer>© 2026 Crypto Scam Awareness</footer>
+<script>
+function switchLang(lang){
+  document.querySelector('.tab.active').classList.remove('active');
+  if(lang==='fr'){document.querySelectorAll('.tab')[0].classList.add('active');}
+  else{document.querySelectorAll('.tab')[1].classList.add('active');}
+  document.getElementById('fr').style.display = (lang==='fr')?'block':'none';
+  document.getElementById('en').style.display = (lang==='en')?'block':'none';
+}
+</script>
+</body>
+</html>
